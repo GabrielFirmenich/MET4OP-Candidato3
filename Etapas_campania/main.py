@@ -144,7 +144,7 @@ import folium
 from folium.features import GeoJsonPopup, GeoJsonTooltip
 
 
-m = folium.Map(location=[-34.3559, -58.2255], zoom_start=4)
+m = folium.Map(location=[-34.6083, -58.4212], zoom_start=11.45)
 
 popup = GeoJsonPopup(
     fields=["circuito", "pp3"],
@@ -206,10 +206,5 @@ ax.set_ylabel('Latitud')
 # Mostrar el mapa finalizado
 caba_votos_shp.plot(column='nv', cmap='viridis',scheme='quantiles', k = 4, legend=True, ax=ax, zorder=5)
 #%%
-import folium
-from folium.features import GeoJsonPopup, GeoJsonTooltip
 
-
-m = folium.Map(location=[-34.3559, -58.2255], zoom_start=4)
-m
 #%%
